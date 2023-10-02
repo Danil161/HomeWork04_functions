@@ -5,8 +5,8 @@
 int Prompt(string message)
 {
     Console.Write(message);
-    string readValue = Console.ReadLine();
-    int result = int.Parse(readValue);
+    string readInput = Console.ReadLine();
+    int result = int.Parse(readInput);
     return result;
 }
 
