@@ -2,6 +2,7 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
+Console.Clear();
 int Prompt(string message)
 {
     Console.Write(message);
@@ -24,7 +25,7 @@ bool VerificationZero (int basisDegree)
 {
     if (basisDegree < 0)
     {
-        Console.WriteLine("Показатель степени не должен быть меньше нуля");
+        Console.WriteLine("Показатель степени не должен быть меньше нуля согласно условию!");
         return false;
     }
     return true;
@@ -35,5 +36,5 @@ int exponente = Prompt("Введите число B (показатель сте
 
 if (VerificationZero(basisDegree))
 {
-    Console.WriteLine($"{basisDegree} в степени {exponente} = {Multiplication(basisDegree, exponente)}");
+    Console.WriteLine($"{basisDegree} в степени {exponente} равно {Multiplication(basisDegree, exponente)}");
 }
